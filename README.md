@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# شركاء النجاح | Success Partners
 
-## Getting Started
+A modern, clean website for Success Partners - an Iraqi company specializing in engineering services, real estate development, commercial agencies, and general trading.
 
-First, run the development server:
+## 🎨 Brand Identity
+
+- **Primary Color (Trusty Blue):** `#154762`
+- **Secondary Color (Growth Green):** `#39BA9F`
+- **Font:** Inter (placeholder for Loew Next Arabic)
+- **Design:** Modern, clean with generous white space
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm, yarn, pnpm, or bun
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+```
+
+### Development
+
+```bash
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Build for production
+npm run build
+```
 
-## Learn More
+### Deploy to Cloudflare
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Deploy to Cloudflare Workers
+npm run deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Preview deployment
+npm run preview
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+├── app/
+│   ├── components/           # Reusable components
+│   │   ├── Header.tsx       # Navigation header
+│   │   ├── Footer.tsx       # Footer with links
+│   │   ├── Hero.tsx         # Hero section
+│   │   ├── About.tsx        # About section
+│   │   ├── Services.tsx     # Services section
+│   │   └── Contact.tsx      # Contact form
+│   ├── privacy/             # Privacy policy page
+│   ├── imprint/             # Imprint/legal page
+│   ├── page.tsx             # Home page
+│   ├── layout.tsx           # Root layout
+│   └── globals.css          # Global styles
+├── public/                  # Static assets
+│   └── logo.svg            # Company logo
+└── next.config.ts          # Next.js configuration
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌟 Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Modern Design:** Clean, minimal design with smooth animations
+- **RTL Support:** Full Arabic language support with right-to-left layout
+- **Responsive:** Mobile-first design that works on all devices
+- **SEO Optimized:** Proper meta tags and semantic HTML
+- **Fast Performance:** Built with Next.js 15 and optimized for speed
+- **Cloudflare Ready:** Configured for Cloudflare Workers deployment
+
+## 📄 Pages
+
+- **Home:** Landing page with hero, about, services, and contact sections
+- **Privacy Policy:** Comprehensive privacy policy in Arabic
+- **Imprint:** Legal information and company details
+
+## 🔧 Tech Stack
+
+- **Framework:** Next.js 15.4.6
+- **React:** 19.1.0
+- **Styling:** TailwindCSS 4
+- **Icons:** Lucide React
+- **Deployment:** Cloudflare Workers via @opennextjs/cloudflare
+- **Language:** TypeScript
+
+## 📞 Contact Information
+
+- **Phone:** +964 775 555 4017 / +964 785 555 4017
+- **Email:** info@successpartners-iq.com
+- **Instagram:** @successpartnersiq
+- **LinkedIn:** @successpartnersiq
+
+## 📝 Next Steps
+
+1. **Add Company Logo:** Replace `/public/logo.svg` with the actual company logo
+2. **Add Real Images:** Replace placeholder images with high-quality company photos
+3. **Font Update:** Install and configure Loew Next Arabic font
+4. **Content Review:** Review and update all Arabic content
+5. **Form Backend:** Implement contact form submission backend
+6. **Analytics:** Add Google Analytics or similar tracking
+7. **Domain Setup:** Configure custom domain for Cloudflare deployment
+
+## 🎯 Development Notes
+
+- The website uses Inter font as a placeholder. Update to Loew Next Arabic when available.
+- All text is in Arabic with RTL support enabled.
+- Images are currently using placeholders - update with actual company photos.
+- Contact form currently logs to console - implement backend integration.
+- Color scheme follows brand guidelines: #154762 (Blue) and #39BA9F (Green).
+
+---
+
+Built with ❤️ for Success Partners
