@@ -26,7 +26,7 @@ export default function Header() {
               alt="شركاء النجاح"
               width={180}
               height={50}
-              className="h-10 md:h-12 w-auto"
+              className="h-8 md:h-12 w-auto"
               priority
             />
           </Link>

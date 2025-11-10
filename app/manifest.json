@@ -1,0 +1,19 @@
+{
+  "name": "شركاء النجاح - Success Partners Iraq",
+  "short_name": "شركاء النجاح",
+  "description": "شركة عراقية رائدة في تقديم حلول متكاملة في الخدمات الهندسية، التطوير العقاري، الوكالات التجارية، والتجارة العامة",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#154762",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "lang": "ar",
+  "dir": "rtl"
+}

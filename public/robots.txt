@@ -1,0 +1,10 @@
+# robots.txt for Success Partners Iraq
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://successpartners-iq.com/sitemap.xml
+
+# Disallow admin or private pages (if any in future)
+# Disallow: /admin/
