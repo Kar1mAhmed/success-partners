@@ -6,8 +6,7 @@
     --primary-green: #39BA9F;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-    --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    --font-archivo: 'Archivo', sans-serif;
+    --font-cairo: 'Cairo', sans-serif;
   }
 }
 
@@ -18,19 +17,39 @@
     box-sizing: border-box;
     @apply border-gray-200;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
     background: #ffffff;
     color: #1a1a1a;
-    font-family: var(--font-archivo), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: var(--font-cairo), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.8;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @apply bg-white text-gray-900 font-[family-name:var(--font-archivo)];
+    @apply bg-white text-gray-900 font-[family-name:var(--font-cairo)];
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-[family-name:var(--font-archivo)];
+    @apply font-[family-name:var(--font-cairo)];
+  }
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -20px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  .animate-slide-down {
+    animation: slide-down 0.3s ease-out;
   }
 }
 

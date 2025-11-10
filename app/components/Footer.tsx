@@ -6,91 +6,95 @@ export default function Footer() {
   return (
     <footer className="bg-[#154762] text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
           <div className="space-y-6">
             <Image
               src="/logo.svg"
-              alt="Success Partners"
+              alt="شركاء النجاح"
               width={160}
               height={45}
               className="h-10 w-auto brightness-0 invert"
             />
             <p className="text-sm text-gray-300 leading-relaxed">
-              Leading Iraqi company providing integrated solutions in engineering, real estate, commercial agencies, and general trade.
+              شركة عراقية رائدة في تقديم حلول متكاملة في الخدمات الهندسية، التطوير العقاري، الوكالات التجارية، والتجارة العامة.
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+          {/* Mobile: 2 columns, Desktop: normal */}
+          <div className="grid grid-cols-2 lg:contents gap-8 col-span-2 lg:col-span-1">
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">روابط سريعة</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#about" className="text-sm text-gray-300 hover:text-[#39BA9F] transition-colors">
-                  About Us
+                  من نحن
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-sm text-gray-300 hover:text-[#39BA9F] transition-colors">
-                  Services
+                  خدماتنا
                 </a>
               </li>
               <li>
                 <a href="#values" className="text-sm text-gray-300 hover:text-[#39BA9F] transition-colors">
-                  Our Values
+                  قيمنا
                 </a>
               </li>
               <li>
                 <Link href="/privacy-policy" className="text-sm text-gray-300 hover:text-[#39BA9F] transition-colors">
-                  Privacy Policy
+                  سياسة الخصوصية
                 </Link>
               </li>
               <li>
                 <Link href="/imprint" className="text-sm text-gray-300 hover:text-[#39BA9F] transition-colors">
-                  Imprint
+                  معلومات قانونية
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            {/* Contact Info */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">تواصل معنا</h3>
             <ul className="space-y-4">
               <li>
                 <a
                   href="tel:+9647755554017"
-                  className="flex items-center space-x-3 text-sm text-gray-300 hover:text-[#39BA9F] transition-colors"
+                  className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#39BA9F] transition-colors"
                 >
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  <span>+964 775 555 4017</span>
+                  <span dir="ltr">+964 775 555 4017</span>
                 </a>
               </li>
               <li>
                 <a
                   href="tel:+9647855554017"
-                  className="flex items-center space-x-3 text-sm text-gray-300 hover:text-[#39BA9F] transition-colors"
+                  className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#39BA9F] transition-colors"
                 >
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  <span>+964 785 555 4017</span>
+                  <span dir="ltr">+964 785 555 4017</span>
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:info@successpartners-iq.com"
-                  className="flex items-center space-x-3 text-sm text-gray-300 hover:text-[#39BA9F] transition-colors"
+                  className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#39BA9F] transition-colors"
                 >
                   <Mail className="w-4 h-4 flex-shrink-0" />
-                  <span>info@successpartners-iq.com</span>
+                  <span dir="ltr">info@successpartners-iq.com</span>
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Social Media */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
+          </div>
+
+          {/* Social Media - Hidden on mobile */}
+          <div className="hidden lg:block">
+            <h3 className="text-lg font-semibold mb-4">تابعنا</h3>
+            <div className="flex gap-4">
               <a
                 href="https://instagram.com/successpartnersiq"
                 target="_blank"
@@ -115,7 +119,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Success Partners. All rights reserved.
+            © {new Date().getFullYear()} شركاء النجاح. جميع الحقوق محفوظة.
           </p>
         </div>
       </div>
