@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const archivo = Archivo({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-inter",
+  variable: "--font-archivo",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "شركاء النجاح | Success Partners - شركة عراقية رائدة في الخدمات المتكاملة",
-  description: "شركة شركاء النجاح هي شركة عراقية متخصصة في الخدمات الهندسية، التطوير والتسويق العقاري، الوكالات التجارية، والتجارة العامة. نقدم حلول احترافية واستراتيجية لتحقيق النجاح.",
-  keywords: "شركاء النجاح, Success Partners, العراق, خدمات هندسية, تطوير عقاري, وكالات تجارية, تجارة عامة",
+  title: "Success Partners | Leading Iraqi Company in Integrated Services",
+  description: "Success Partners is an Iraqi company specializing in engineering services, real estate development and marketing, commercial agencies, and general trade. We provide professional and strategic solutions to achieve success.",
+  keywords: "Success Partners, Iraq, engineering services, real estate development, commercial agencies, general trade",
   authors: [{ name: "Success Partners" }],
   openGraph: {
-    title: "شركاء النجاح | Success Partners",
-    description: "شركة عراقية رائدة في تقديم الحلول المتكاملة",
+    title: "Success Partners | Leading Iraqi Company",
+    description: "An Iraqi company leading in providing integrated solutions",
     type: "website",
-    locale: "ar_IQ",
+    locale: "en_US",
   },
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl" className={inter.variable}>
+    <html lang="en" className={archivo.variable}>
       <body className="antialiased">
         {children}
       </body>
