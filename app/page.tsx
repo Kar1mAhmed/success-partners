@@ -330,7 +330,7 @@ export default function Home() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA?w=800&q=80"
                     alt="فريق عمل محترف"
                     width={700}
                     height={525}
