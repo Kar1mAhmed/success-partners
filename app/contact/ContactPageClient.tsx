@@ -134,7 +134,7 @@ export default function ContactPageClient() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">الموقع</h3>
-                      <p className="text-gray-600">العراق</p>
+                      <p className="text-gray-600">العراق، بغداد، المنصور مدخل شارع مطعم هيل وزعفران</p>
                     </div>
                   </div>
                 </div>
